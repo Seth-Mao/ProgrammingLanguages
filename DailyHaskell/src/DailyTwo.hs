@@ -57,6 +57,7 @@ appendToEach appendString (head:tail) = (head ++ appendString) : appendToEach ap
 toSetList :: Eq a => [a] -> [a]
 toSetList [] = []  
 toSetList (head:tail) =
+--CHANGE ELEM TO HOMEMADE FUNCTION
     if head `elem` tail
         then toSetList tail 
         else head : toSetList [y | y <- tail, y /= head] 
