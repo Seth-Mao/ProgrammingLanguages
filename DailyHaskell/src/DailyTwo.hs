@@ -8,6 +8,7 @@ module DailyTwo where
 -- The type for the list is polymorphic as it can have different types such as char or integers
 -- The resulting list will contain all the elements from indexes containing multiple of fours
 
+--Change to getting every FOURTH element not just multiples of 4
 everyFourth :: [a] -> [a]
 everyFourth list = everyFourth' list 0 []
   where
