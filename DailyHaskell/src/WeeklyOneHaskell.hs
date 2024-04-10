@@ -1,3 +1,5 @@
+--Testing Push
+
 module WeeklyOneHaskell where
 
 --Function name removeChar
