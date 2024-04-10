@@ -27,6 +27,7 @@ library
       DailyOne
       DailyTwo
       Lib
+      WeeklyOneHaskell
   other-modules:
       Paths_DailyHaskell
   hs-source-dirs:
@@ -107,6 +108,7 @@ test-suite DailyHaskell-test
   other-modules:
       DailyOneSpec
       DailyTwoSpec
+      WeeklyOneSpec
       Paths_DailyHaskell
   hs-source-dirs:
       test
