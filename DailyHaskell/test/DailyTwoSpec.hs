@@ -1,4 +1,6 @@
-module DailyTwoSpec where
+{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
+{-# HLINT ignore "Redundant bracket" #-}
+module DailyTwoSpec where 
 
 import Test.Hspec
 import DailyTwo
@@ -13,7 +15,7 @@ spec = do
 --Normal Behavior Test
     context "everyFourth [1..33]" $
      it"should be 4,8,12,16,20,24,28,32" $
-     (everyFourth [1..33]) `shouldBe` [4,8,12,16,20,24,28,32]
+     everyFourth [1..33] `shouldBe` [4,8,12,16,20,24,28,32]
 
 --Less than four elements Behavior Test
     context "everyFourth [1,2,3]" $
@@ -60,7 +62,7 @@ spec = do
 
 --Other appends test with space
     context "appendToEach \"?\" [\"What's\",\"Up\"]" $
-        it "should be [\"dummy says\",\"Bruh\"]" $
+        it "should be [\"dummy says what\",\"Bruh what\"]" $
             (appendToEach " what" ["dummy says","bruh"]) `shouldBe` ["dummy says what","bruh what"]
 
 --Normal Behavior Test

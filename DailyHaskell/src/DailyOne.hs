@@ -1,4 +1,4 @@
-module DailyOne where
+module DailyOne where --allow
 
 --Question 1
 --The function name is quadratic

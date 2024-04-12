@@ -1,4 +1,4 @@
-module DailyTwo where
+module DailyTwo where 
 
 --Question 1
 --The function name is everyFourth
